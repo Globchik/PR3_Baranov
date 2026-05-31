@@ -13,3 +13,42 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Built variants and compilation artifacts
+*.apk
+*.aar
+*.ap_
+*.aab
+/*/build
+
+# IDE-specific configurations (Android Studio / IntelliJ)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/dictionary.xml
+.idea/analytics.json
+.idea/caches/
+.idea/modules.xml
+.idea/deploymentTargetSelector.xml
+*.ipr
+*.iws
+
+# Gradle architecture (Keep wrapper configs, ignore local cache)
+.gradle/
+build/
+
+# Log files
+*.log
+
+# Device/Emulator artifacts
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Operating system files
+Thumbs.db
+
+# Secrets & Keys (Never commit your production credentials)
+*.keystore
+*.jks
+!debug.keystore
