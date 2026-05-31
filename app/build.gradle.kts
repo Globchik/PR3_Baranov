@@ -14,6 +14,7 @@ android {
     defaultConfig {
         applicationId = "com.example.pr3_baranov"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -55,4 +56,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
+
+    implementation(libs.kotlinx.coroutines.android)
+
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.material3)
 }
